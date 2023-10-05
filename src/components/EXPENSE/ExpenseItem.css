@@ -16,7 +16,7 @@
 }
 
 .expense-item h2{
-    color:cadetblue;
+    color:rgb(105, 147, 148);
     font-size: 1rem;
     flex: 1;
     margin-top: 2rem;
@@ -27,7 +27,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: azure;
-    background-color: rgb(53, 130, 184);
+    background-color: rgb(148, 176, 85);
     border: 1px solid azure;
   
     border-radius: 12px;
