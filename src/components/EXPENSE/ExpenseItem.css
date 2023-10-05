@@ -5,33 +5,38 @@
     padding: 0.5rem;
     margin:1rem 0;
     width: 90%;
+    ;
    
 }
 .expense-item__description{
     display: flex;
-    flex-direction: column;
-    gap:1rem;
-    align-items: flex-end;
-    flex-flow: column-reverse;
-    justify-content: flex-start;
-    flex:1;
+    flex-direction: row;
+    flex: 1 1;
+
 }
 
 .expense-item h2{
     color:cadetblue;
     font-size: 1rem;
     flex: 1;
-    margin: 0 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
     color:rgb(77, 69, 77);
 }
 .expense-item__price{
     font-size: 1rem;
     font-weight: bold;
-    color:azure;
+    color: azure;
     background-color: rgb(53, 130, 184);
-    border:1px solid azure;
-    padding:0.5rem;
+    border: 1px solid azure;
+  
     border-radius: 12px;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 50%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+      
 }
 .expense-delete{
     font-size: 1rem;
@@ -42,18 +47,30 @@
     padding:0.5rem;
     border-radius: 12px;
 }
-@media (min-width:580px) {
+@media only  screen and (max-width:450px) {
     .expense-item__description{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex: 1;
+        margin-bottom: 5%;
+        padding:1%;
+        flex-flow: inherit;
     }
-    .expense-item__description h2{
-        font-size: 1.25rem;
-    }
+
     .expense-item__price{
         font-size: 1.25rem;
-        padding: 0.5rem 1.5rem;
+        padding: 0.25rem;
+        margin-bottom: -3%;
+        margin-left: 25%;
+    }
+    .expense-item h2{
+        margin: 1rem;
+        margin-bottom:1%
+    }
+    .expense-delete{
+        margin-left: 2rem;
+    }
+}
+@media only screen and (max-width:575px){
+   
+    .expense-item__price{
+        margin-left: 50%;
     }
 }

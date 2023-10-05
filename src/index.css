@@ -12,3 +12,9 @@ body{
     margin: 0;
     background-image: url("./05861902-b29d-41b7-b678-7e32749988bd.png");
 }
+@media only screen and (max-width:450px){
+    body{
+      background-size: auto;
+       
+    }
+}
