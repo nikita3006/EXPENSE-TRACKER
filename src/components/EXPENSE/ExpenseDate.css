@@ -1,32 +1,38 @@
-.expense-date{
+.expense-date {
     display: flex;
     flex-direction: column;
-    width:6.5rem; 
-    border:1px solid #ececec;
+    width: 6.5rem;
+    border: 1px solid #ececec;
     background-color: #2a2a2a;
-    color:rgb(219, 200, 209);
+    color: rgb(219, 200, 209);
     border-radius: 12px;
     align-items: center;
     justify-content: center;
-
 }
 
-.expense-date__month{
+.expense-date__month {
     font-size: 0.75rem;
     font-weight: bold;
 }
 
-.expense-date__year{
+.expense-date__year {
     font-size: 0.75rem;
 }
-.expense-date__day{
+
+.expense-date__day {
     font-size: 1.5rem;
     font-weight: bold;
 }
-@media only screen and (max-width:450px){
-    .expense-date__day{
-    font-size: 1rem;
-    font-weight: bold;
+
+@media only screen and (max-width: 450px) {
+    .expense-date__day {
+        font-size: 1rem;
+        font-weight: bold;
     }
-   
+    .expense-date {
+        justify-content: center;
+        align-items: center;
+        margin: 20px 90px;
+
+    }
 }

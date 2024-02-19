@@ -1,24 +1,28 @@
-.new-expense{
+.new-expense {
     background-color: #becec6;
-    padding:1rem;
-    margin:2rem auto;
-    width: 40%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 100%;
+    width: 40%; 
     border-radius: 12px;
-   
 }
 
-.new-expense button{
-    font:inherit;
+.new-expense button {
+    font: inherit;
     cursor: pointer;
-    padding:1rem 2rem;
-    border:1px solid #072616;
+    padding: 1rem 2rem;
+    border: 1px solid #072616;
     background-color: #332639;
-    color:white;
+    color: white;
     border-radius: 12px;
     margin-right: 2rem;
 }
-@media only screen and (max-width:450px){
-    .new-expense button{
-        padding:0.5rem;
+
+@media only screen and (max-width: 450px) {
+    .new-expense {
+        width: 90%; 
+    }
+    .new-expense button {
+        padding: 0.5rem;
     }
 }

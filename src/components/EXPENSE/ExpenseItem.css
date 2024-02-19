@@ -1,76 +1,78 @@
-.expense-item{
+.expense-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    margin:1rem 0;
+    margin: 1rem 0;
     width: 90%;
-    ;
-   
 }
-.expense-item__description{
+
+.expense-item__description {
     display: flex;
     flex-direction: row;
     flex: 1 1;
-
 }
 
-.expense-item h2{
-    color:rgb(105, 147, 148);
+.expense-item h2 {
+    color: rgb(105, 147, 148);
     font-size: 1rem;
     flex: 1;
     margin-top: 2rem;
     margin-left: 1rem;
-    color:rgb(77, 69, 77);
+    color: rgb(77, 69, 77);
 }
-.expense-item__price{
+
+.expense-item__price {
     font-size: 1rem;
     font-weight: bold;
     color: azure;
     background-color: rgb(148, 176, 85);
     border: 1px solid azure;
-  
     border-radius: 12px;
-    margin: 1rem;
     padding: 1rem;
-    margin-left: 50%;
-    margin-bottom: 1.5rem;
+    margin: 1rem;
     text-align: center;
-      
 }
-.expense-delete{
+
+.expense-delete {
     font-size: 1rem;
     font-weight: bold;
-    color:azure;
+    color: azure;
     background-color: rgb(29, 52, 6);
-    border:0px solid azure;
-    padding:0.5rem;
+    border: 0px solid azure;
+    padding: 0.5rem;
     border-radius: 12px;
 }
-@media only  screen and (max-width:450px) {
-    .expense-item__description{
-        margin-bottom: 5%;
-        padding:1%;
-        flex-flow: inherit;
+
+@media only screen and (max-width: 450px) {
+    .expense-item {
+        flex-direction: column; 
+        align-items: flex-start;
     }
 
-    .expense-item__price{
+    .expense-item__description {
+        margin-bottom: 5%;
+        padding: 1%;
+        margin-left: 4rem;
+    }
+
+    .expense-item h2 {
+        margin: 1rem 0; 
+    }
+
+    .expense-item__price {
         font-size: 1.25rem;
         padding: 0.25rem;
-        margin-bottom: -3%;
         margin-left: 25%;
     }
-    .expense-item h2{
-        margin: 1rem;
-        margin-bottom:1%
-    }
-    .expense-delete{
-        margin-left: 2rem;
+
+    .expense-delete {
+        margin-left: 7rem;
     }
 }
-@media only screen and (max-width:575px){
-   
-    .expense-item__price{
+
+@media only screen and (max-width: 575px) {
+    .expense-item__price {
         margin-left: 50%;
     }
 }
