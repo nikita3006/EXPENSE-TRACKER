@@ -1,6 +1,6 @@
-import React from 'react';
-import ExpenseItem from './ExpenseItem';
-import './Expenses.css';
+import React from "react";
+import ExpenseItem from "./ExpenseItem";
+import "./Expenses.css";
 
 const Expenses = (props) => {
   if (!props.items || props.items.length === 0) {
@@ -14,11 +14,9 @@ const Expenses = (props) => {
           key={expense.id}
           title={expense.title}
           amount={expense.amount}
-          date={new Date(expense.date)} 
-          onDeleteExpense={() => props.onDeleteExpense(expense.id)} 
+          date={new Date(expense.date)}
+          onDeleteExpense={() => props.onDeleteExpense(expense.id)}
         />
-      
-
       ))}
     </ul>
   );
